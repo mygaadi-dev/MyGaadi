@@ -1,4 +1,4 @@
-namespace PanCardAddharCarVerification_Server
+namespace PanVerification_Service
 {
     public class WeatherForecast
     {

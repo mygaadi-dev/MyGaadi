@@ -1,0 +1,1397 @@
+Initial Discussion
+Introduction: The interview started with a brief introduction.
+Questions about CDAC Project: They directly asked about my CDAC project. They asked about my
+contribution and how authentication and authorization were implemented in the project.
+Engineering Project Discussion: They then asked about my engineering project, its working, and
+overall implementation.
+Overall Experience: The interview mainly focused on both of my projects. The interview lasted
+around 10 minutes.
+
+Technical Questions
+Explain your project.
+Vulnerabilities in projects.
+Click jacking.
+Csrf attacks.
+SQL injection.
+How do you handle it in a project?
+Schedulers.
+Bankers algorithm.
+Deadlocks.
+Do you know about the circuit breaker pattern?
+How does virtual dom work?
+Explain rest vs soap.
+Which status codes are used in your project?
+What is your tech stack?
+Explain your project what was your part in project, what you've developed in project.
+Difference between authentication and authorisation.
+How many roles are there in ur project?
+1.
+2.
+
+3.
+
+4.
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+
+Explain react hooks.
+Can one try block have multiple catch blocks?
+Can multiple try blocks have same catch block?
+Explain deployment phases.
+Explain sql triggers.
+Difference between stored procedures and functions.
+Can you apply loop in Stored procedure?
+Can you apply while loop in Stored procedure?
+Can u apply for loop in stored procedure?
+Final year project in detail. And questions based on that.
+
+2. E-zest Solutions
+
+T1: 30 minutes
+Introduction
+Basic OOPS concepts
+OOAD
+Oops pillars with real life examples
+Difference between interface and abstract classes
+Need of interfaces if abstract classes can have all methods abstract
+Explain project
+Explain jwt authentication and authorization with flow diagram + classes and beans you have
+configured
+What is jwt token how it's secure
+DSA question. Anagram check (only characters)
+DSA question anagram check with numbers in it
+Group Anagrams
+Given an string of characters want output in descending order of most frequently seen character
+continuously (substring)
+What SQL function and procedures
+18.
+19.
+20.
+21.
+22.
+23.
+24.
+25.
+26.
+27.
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+
+9.
+10.
+11.
+12.
+13.
+
+14.
+
+5 Differences between them
+What are cursors why to use them
+Given two tables and asked to write SQL queries (correlated subquery)
+Joins queries
+Delete duplicates in table without using self join
+T2: 45 minutes
+Introduction (interrupted in between)
+Explain whole project (song streaming module)
+What is byterate?
+Questions on byte chunks
+How you are handling songs in frontend
+How you are sending request for song? (Partial request + full request)
+How you are handling network failures?
+What if your app listeners are from multiple continents what Implementations need to be done
+How you are handling latencies and packet loss
+What will be the scaling strategies
+How you handled if multiple users trying to access streaming features
+Buffer pool?
+How you are handling synchronisation
+Write code for synchronised access (written using binary semaphore)
+What is semaphore
+Tell me steps to deploy on aws
+Which aws service to use for streaming
+Managerial round: 35 minutes
+Introduction besides your CV
+Why network cell is hexagonal (given a real time problem statement why how?) (testing logical
+abilities) he helped me to solve the problem
+Tell me your favourite topic Suppose I am you friend bcom graduate explain the topic
+Now assuming I am your friend from CDAC now explain same topic to me
+15.
+16.
+17.
+18.
+19.
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+
+1.
+2.
+
+3.
+4.
+
+Do you know about gen AI
+What is llm?
+Difference between traditional machine learning models and llm
+I asked some questions about company
+HR1: 20 min
+Introduction (no technical)
+Questions on college experience
+Questions on year gap
+How you think you can be team player
+Strengths
+More gap questions (need to justify the gap situation)
+Family background
+I asked some questions on culture
+
+3. Fortinet
+
+Write a code to find the pivot element in the array such that the sum of the element of the left side
+and the right side is the same.
+Find occurrence of the consecutive characters input :- aabgbccaabbvada. Output:- aa 2....
+Input arr = 08305020. Output = 83520000
+Explain the project in detail
+What is jwt
+What is stateless
+Client server architecture
+TCP 3 way handshake
+Write the database structure of your project
+Queries on join and window function based on project database structure
+Which Improvements that you can do in database
+Suppose you have 100000 data then how will you load it.
+Scenario based questions on promise and axios
+5.
+6.
+7.
+8.
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+
+1.
+
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+
+Explain the flow using the OSI model.
+How DNS work
+Linux commands
+What happens when you hit the url
+How authentication work.
+What is the bearer token .how it works
+How do clients understand the token
+What is foreign key
+Difference between primary vs foreign key
+What is polymorphism
+Compile time vs runtime time
+
+4. Bajaj Finserv Health
+
+Interview 1 (Technical)
+Asked in detail about my engineering project.
+Coding question (pen and paper): Given a string, print the frequency of each character without using
+HashMap.
+Difference between final vs finally
+Can we change value of final
+Reflection concept
+String vs StringBuffer vs StringBuilder
+throw vs throws
+What is an exception
+Exception handling with tricky try–catch–finally combinations and asked about the output
+OOP concepts and real-life understanding
+Runtime vs Compile-time polymorphism
+Multiple coding scenarios based on concepts and asked what would happen in different situations
+Asked how I would handle real-world scenarios in a web application
+14.
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+24.
+
+1.
+2.
+
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+
+Interview 2 (Technical)
+Coding question: A string contains consecutive numbers, followed by the first name, then numbers,
+then the surname, and again numbers. Example: Input → 13234ABCD4363637XYZ53535 | Output
+→ Store ABCD and XYZ in two separate strings and print them. They gave me a laptop and 10
+minutes to code.
+After coding: Asked me to write a prompt for ChatGPT to generate the correct solution.
+SQL question: Write a query to find the 2nd highest marks from the students table.
+Asked if I used MongoDB in my project. Since my project used MySQL, he asked about my database
+entities.
+
+Interview 3 (Technical)
+Questions about Artificial Intelligence and asked me to explain it in simple terms.
+Frontend vs Backend validation: Which validations can be applied only on the frontend and why.
+Logical and analytical thinking questions: For example, why sinkholes are circular in shape.
+Coding question (pen and paper): Given a number, find the closest palindrome. Example: Input →
+123 | Output → 121.
+Interview 4 (HR Round)
+Projects
+Family background
+Knowledge about the company
+Why I am interested in this role
+They also asked if I had any questions.
+
+5. Cerillion Technologies
+
+Technical Interview 1
+Explain your project in detail.
+Are you more interested in frontend or backend?
+If 100 people are in a room and each person shakes hands with every other person exactly once,
+how many handshakes occur?
+1.
+
+2.
+3.
+4.
+
+1.
+2.
+3.
+4.
+
+1.
+2.
+3.
+4.
+5.
+
+1.
+2.
+3.
+
+If a coin is tossed 7 times, what is the probability of getting a head?
+Explain the equals() and hashCode() methods. Can the same object generate different hash codes?
+Explain SQL joins with a Venn diagram.
+Write an SQL query to delete duplicate records.
+What is the difference between WHERE and HAVING? Can both be used together?
+Write SQL queries related to your project.
+Solve the LeetCode “Best Time to Buy and Sell Stock” problem.
+Give an overview of how you would design an e-commerce platform like Amazon using React,
+including state management, product filtering, product rendering, and cart functionality (add/remove
+items).
+Why did you join CDAC?
+Technical Interview 2
+What tech stack did you use in your project? Why did you choose those technologies over other
+alternatives?
+Explain the difference between Comparable and Comparator in Java.
+What is a Stream in Java?
+Five snippet-based questions related to upcasting and method overriding in Java.
+What is a CTE (Common Table Expression) in SQL? Write its syntax.
+Two SQL queries based on joins and window functions.
+LeetCode problem “First Non-Repeating Character in a String.”
+LeetCode problem “Valid Parentheses.”
+Give an overview of how Angular works
+
+6. PharmaACE
+
+What is JWT?
+Explain the pillars of OOP. Also, explain where and how you have implemented them in your project.
+What is useEffect in React? Write its syntax. Explain different variations of useEffect and their uses.
+What are the different types of SQL commands?
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+
+12.
+
+1.
+
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+
+1.
+2.
+3.
+4.
+
+They give an SQL query related to COMMIT and ROLLBACK and ask: Which command is
+committed, up to which line rollback happens, why rollback occurs.
+They give 2–3 Java code snippets and ask: What is the output? Explain the reason for the output.
+Write a program to check whether a number is an Armstrong number and explain the logic.
+Write a program to count how many palindrome strings are present in a given string.
+Write a program to find the length of the longest substring without repeating characters.
+
+7. Xplor
+
+Explain your project in deep.
+Explain how Authentication and Authorization and explain in your project
+Explain differnece betwen Authentication and Authorization.
+Explain Entire Flow of Your Project
+Explain Security in your project.
+Explain Authorization Filter in your project
+How many Roles in your Project and how you define them in your project
+Explain JWT and how you set JWT in your project
+How you set Expiry Time of JWT in your project.
+What is Marker Interface.
+What is metadata in marker interface.
+What is react hook.
+Pattern printing Code.
+What is Aggregation and Compostion.
+Draw JVM architecture.
+What is stack and Heap and which type of Data stored in Stack and Heap.
+Where is Spring boot Configuration file Stored ? in which Jar File.
+Explain Razor pay Integration in your Project.
+Explain Payment integration flow in your project.
+When user pay a payment and suddenly user click back button then what happens.
+Explain different Types of React hook in details.
+5.
+
+6.
+7.
+8.
+9.
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+
+What is AI.
+Explain Your Views on AI.
+Explain Drawback of AI.
+Which AI you used.
+Which AI you Like Most
+Draw Project Block Diagram.
+
+8. Amdocs
+
+Self Introduction in Short?
+Engineering Project Flow from user to backend, Why CNN all ML and DL model working?
+The project is now live currently?
+Now Explain CDAC Project, Tell me about Project Tech Stack?
+Why React?
+What is Redux?
+Which Data Structure did you use in your project?
+Write all the Spring Boot annotations and explain each in detail why it used?
+What Do you know about Deadlock?
+Implement Deadlock, pen paper coding?
+How to avoid Deadlock?
+Implement Bankers Algorithm?
+What is the difference between Race Condition and Deadlock?
+What is Producer, Consumer Problem?
+Implement Producer Consumer Problem?
+What is Multi-Threading?
+Implement Multi-Threading?
+SQL Join Queries on tables?
+Suppose, if you want to fast searching from database, then what you will do, suggest me other than
+Indexing?
+Pattern Printing Program?
+22.
+23.
+24.
+25.
+26.
+27.
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+
+20.
+
+Reverse a String Program?
+What is shell scripting?
+Linux Basics?
+What is Docker?
+Difference between Docker and Kubernetes?
+
+9. General / Mixed Interview Questions
+
+Introduce yourself.
+What was your role in the project.
+Explain both CDAC project and final year project.
+Draw project architecture, and db schema.
+Explain jwt and spring security it's architecture in project.
+What is authentication and authorisation.
+Status codes 401, 400, 500, 403, etc.
+Why you've used jwt in project.
+If multiple people are booking seat simultaneously and only 1 seat is remained/ few seats are
+remained how do you handle this case in your project.
+Explain react hooks
+What is react component lifecycle,
+What is useEffect().
+What is redux.
+What is rest api explain with example. How you've used it in your project.
+What is @SpringBootApplication annotation
+Concurrency/Multi threading
+Hashmap (All types)
+== And === difference
+== And equals() method difference.
+Write sql queries 2nd highest salary. Etc.
+Explain Deployment phases.
+21.
+22.
+23.
+24.
+25.
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+
+What do you know about ci/cd.
+Where have you used hashmap in your project.
+Explain deadlock. And deadlock avoidance/handling techniques
+Write multilevel sorting code on pen paper.
+Have u used multi threading in your project. What is race condition.
+Explain synchronous and asynchronous. Where to use it.
+Your database contains large data, so queries became slow how will you improve the performance.
+Pattern printing program.
+Shadowing concept in java. Super keyword etc.
+If gap in education u have to explain it if asked
+What is undefined and null explain with example (JavaScript)
+How do you do manually rendering in react
+What is dependency array.
+What is virtual dom. How it works. Is using virtual dom really beneficial.
+Explain stored procedure.
+Difference between function and stored procedures.
+Can you use loops in stored procedures. While loop, for loop(not present in sql) etc
+What is singleton design pattern. Where u can use it. Give example
+What is static methods and instance methods? can you override & overload static methods.
+If I integrate 3rd party payment service in your app how will you handle it manage booking flow.
+When seat will get reserved. And also explain multiple people simultaneous booking handling.
+What is generative ai. Have u used ai in your project.
+What is server side rendering and client side rendering. Do you know about next js
+What will u rate urself in front end and backend
+What is optimistic locking and pessimistic locking
+Explain arrow functions
+22.
+23.
+24.
+25.
+26.
+27.
+28.
+29.
+30.
+31.
+32.
+33.
+34.
+35.
+36.
+37.
+38.
+39.
+40.
+41.
+
+42.
+43.
+44.
+45.
+46.
+
+10. Relfor Labs
+
+ROUND 1
+Introduce yourself
+Why 2 years of gap
+How was your college experience
+Explain complete flow of a request from frontend to backend
+What is JPA
+What is SQL injection
+How did you prevent it in project
+What is Spring Data JPA
+Explain entire authentication and authorization flow with JWT
+On which part you worked in your project
+What is mounting and unmounting
+What is closure
+What is deadlock
+How do you prevent deadlocks
+Suppose in your application suddenly 10000 customers traffic came then how would you efficiently
+handle it
+Do you have any questions. What improvements should I focus on based on my performance in this
+interview
+
+ROUND 2
+Introduce yourself
+Explain your project in detail
+Have you implemented seat locking functionality and how? (I explained about lazily releasing the
+locked seats...)
+Is this a good way to release locked seats? (I said no and explained why)
+Can you think of another efficient and proper way of releasing the seats? (I explained about using a
+cron job every 1 minute)
+What if we set the cron job for every 1 hour instead of 1 minute?
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+
+16.
+
+1.
+2.
+3.
+
+4.
+5.
+
+6.
+
+How can you use Redis for seat locking and releasing?
+What is TTL in Redis and how is it advantageous?
+How did you achieve this functionality and how many tables did you use? (Explained Seat
+Reservation, Bookings, Ticket tables)
+Why did you use two tables one for temporary data and then again inserting similar data... do you
+think it is an expensive operation?
+Can you think of a more optimal solution? (Suggested a single table solution)
+What if the operations on all the train related tables increase and the load becomes too heavy how
+will you handle it? (Explained microservices)
+Why microservices why not monolithic architecture?
+What is multithreading?
+Have you used multithreading in your project?
+What is a race condition?
+If two users select the same seat at exactly the same time without even a nanosecond gap then what
+will you do? (Answered using synchronization)
+Is a multithreaded application good or bad what is your opinion? (VLC player example)
+Do you have any questions?
+
+11. General Java Concepts
+
+JRE JDK JVM Difference
+Static n Non Static method n Construction difference
+Controllers and Service Class Implementation
+Binary Search Code
+Sorting Technique
+Upcasting N DownCasting
+Some question on Upcasting n DownCasting like exception etc
+Java Collection
+Difference between List n Set
+Hashmap Implementation
+Garbage can Collection
+7.
+8.
+9.
+
+10.
+
+11.
+12.
+
+13.
+14.
+15.
+16.
+17.
+
+18.
+19.
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+
+Some Question On Garbage Collection
+Final vs Finally Vs Finalize
+Difference Between Interface Vs Abstract Class
+Static Method Vs Default Method
+Stream API some Question
+Exception Handling
+Method Overloading Vs Method Overriding
+Early Binding Vs Late Binding
+Compile vs Runtime Exception
+Oops Pillar
+Write Controller Class With annotations
+Fail Fast n Fail Safe
+Java 1.8 feature
+Guess the Output
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CDAC Interview Experience
+1. Introduction
+The interview started with a brief introduction.
+2. Questions about CDAC Project
+They directly asked about my CDAC project.
+They asked about my contribution and how authentication and authorization were implemented in the project.
+3. Engineering Project Discussion
+They then asked about my engineering project, its working, and overall implementation.
+
+Overall Experience
+The interview mainly focused on both of my projects.
+The interview lasted around 10 minutes.
+
+CDAC INTERVIEW EXPERIENCE 
+1. Explain your project
+2. Vulnerabilities in projects
+3. Click jacking
+4. Csrf attacks
+5. SQL injection
+6. How do you handled it in project
+7. Schedulers
+8. Banckers algorithm
+9. Deadlocks
+10. Do you know about circuit breaker pattern
+11. how virtual dom work
+12. Explain rest vs soap
+13. Which status codes are used in your project
+
+E-zest solutions interview Experience 
+
+T1:  30 minutes 
+
+1. Introduction 
+2. Basic OOPS concepts
+3. OOAD
+4. Oops pillers with real life examples 
+6. Difference between interface and abstract classes 
+7. Need of interfaces if abstract classes can have all methods abstract 
+8. Explain project 
+9. Explain jwt authentication and authorization with flow diagram + classes and beans you have configured 
+10. What is jwt token how it's secure
+11. DSA question. Anagram check(only characters)
+12. DSA question anagram check with numbers in it 
+13. Group Anagrams
+14. Given an string of characters want output in descending order of most frequently seen character continuously(substring )
+15. What SQL function and procedures 
+16. 5 Differences between them 
+17. What are cursors why to use them
+18. Given two tables and asked to write SQL queries (correlated subquery)
+19. Joins queries 
+20. Delete duplicates in table without using self join
+
+T2: 45 minutes 
+1. Introduction (interrupted in between)
+2. Explain whole project (song streaming module)
+3. What is byterate ?
+4. Questions on byte chunks 
+5. . How you are handling songs in frontend 
+6. . How you are sending request for song?(Partial request+ full  request)
+7. . How you are handling network failures?
+8. . What if your app listeners are from multiple continents what Implementations need to be done
+9. . How you are handling latencies and packet loss
+10. . What will be the scaling strategies 
+11. . How you handled if multiple users trying to access streaming features12.  Buffer pool?
+
+13.  How you are handling
+synchronisation
+
+14.  Write code for synchronised access (written using binary semaphore)
+
+15. What is semaphore
+
+16. Tell me steps to deploy on aws 
+17. Which aws service to use for streaming
+
+Managerial round: 35 minutes 
+
+Introduction besides your CV
+1. Why network cell is hexagonal (given a real time problem statement why how ?) (testing logical abilities) he helped me to solve the problem 
+2. Tell me your favourite topic Suppose I am you friend bcom graduate explain the topic
+3. Now assuming I am your friend from CDAC now explain same topic to me 
+4. Do you know about gen AI 
+5. What is llm?
+6. Difference between traditional machine learning models and llm
+7. I asked some questions about company 
+
+
+HR1:20 min 
+
+1. introduction (no technical)
+2. Questions on college experience 
+3. Questions on year gap
+4. How you think you can be team player 
+5. Strengths 
+6. More gap questions (need to justify the gap situation) 
+7. Family background 
+8. I asked some questions on culture
+
+Fortinet interview questions 
+1. write a code to find the pivot element in the array such that the sum of the element of the left side and the right side is the same .
+2. Find  occurrence of the  consecutive characters input :- aabgbccaabbvada.  Output:- aa 2....
+3. Input arr = 08305020. Output = 83520000
+4. Explain the project in detail 
+5. What is jwt 
+6. What is stateless 
+7. Client server architecture 
+8. TCP 3 way handshake 
+9. Write the database structure of your project 
+10. Queries on join and window function based on project database structure 
+11. Which Improvements that you can do in database 
+12. Suppose you have 100000 data then how will you load it .
+13. Scenario based questions on promise and axios 
+14. Explain the flow using the OSI model .
+15. How DNS work
+16. Linux commands
+17. What happens when you hit the url 
+18. How authentication work . 
+19. What is the bearer token .how it works 
+20. How do clients understand the token
+21. What is foreign key 
+22. Difference between primary vs foreign key
+23. What is polymorphism 
+24. Compile time vs runtime time
+
+CDAC interview questions 
+1. What is your tech stack
+2. Explain your project what was your part in project, what you've developed in project.
+3. Difference between authentication and authorisation 
+4. How many roles are there in ur project.
+5. Explain react hooks.
+6. Can one try block have multiple catch blocks 
+7. Can multiple try blocks have same catch block
+8. Explain deployment phases
+9. Explain sql triggers
+10. Difference between stored procedures and functions 
+11. Can you apply loop in Stored procedure.
+12. Can you apply while loop in Stored procedure 
+13. Can u apply for loop in stored procedure 
+14. Final year project in detail. And questions based on that.
+
+Bajaj Finserv Health 
+___________
+
+Interview 1 (Technical)
+Asked in detail about my engineering project.
+Coding question (pen and paper):
+Given a string, print the frequency of each character without using HashMap.
+
+Core Java questions:
+
+Difference between final vs finally
+Can we change value of final 
+Reflection concept
+String vs StringBuffer vs StringBuilder
+throw vs throws
+What is an exception
+Exception handling with tricky try–catch–finally combinations and asked about the output
+OOP concepts and real-life understanding
+Runtime vs Compile-time polymorphism
+Multiple coding scenarios based on concepts and asked what would happen in different situations
+Asked how I would handle real-world scenarios in a web application
+__________
+
+nterview 2 (Technical)
+
+Coding question:
+A string contains consecutive numbers, followed by the first name, then numbers, then the surname, and again numbers.
+Example:
+Input → 13234ABCD4363637XYZ53535
+Output → Store ABCD and XYZ in two separate strings and print them.
+They gave me a laptop and 10 minutes to code.
+After coding:
+Asked me to write a prompt for ChatGPT to generate the correct solution.
+SQL question:
+Write a query to find the 2nd highest marks from the students table.
+Asked if I used MongoDB in my project. Since my project used MySQL, he asked about my database entities.
+__________
+
+Interview 3 (Technical)
+
+Questions about Artificial Intelligence and asked me to explain it in simple terms.
+Frontend vs Backend validation:
+Which validations can be applied only on the frontend and why.
+Logical and analytical thinking questions:
+For example, why sinkholes are circular in shape.
+Coding question (pen and paper):
+Given a number, find the closest palindrome.
+Example:
+Input → 123
+Output → 121.
+__________
+
+Interview 4 (HR Round)
+
+Questions about:
+Projects
+Family background
+Knowledge about the company
+Why I am interested in this role
+They also asked if I had any questions.
+
+Cerillion Technologies 
+
+Technical Interview 1
+
+1.Explain your project in detail.
+
+2.Are you more interested in frontend or backend?
+
+3.If 100 people are in a room and each person shakes hands with every other person exactly once, how many handshakes occur?
+
+4.If a coin is tossed 7 times, what is the probability of getting a head?
+
+
+5.Explain the equals() and hashCode() methods.
+Can the same object generate different hash codes?
+
+6.Explain SQL joins with a Venn diagram.
+
+7.Write an SQL query to delete duplicate records.
+
+8.What is the difference between WHERE and HAVING? Can both be used together?
+
+9.Write SQL queries related to your project.
+
+10.Solve the LeetCode “Best Time to Buy and Sell Stock” problem.
+
+11.Give an overview of how you would design an e-commerce platform like Amazon using React, including state management, product filtering, product rendering, and cart functionality (add/remove items).
+
+12.Why did you join CDAC?
+
+---------------------------------------
+
+Technical Interview 2
+
+1.What tech stack did you use in your project? Why did you choose those technologies over other alternatives?
+
+2.Explain the difference between Comparable and Comparator in Java.
+
+3.What is a Stream in Java?
+
+4.Five snippet-based questions related to upcasting and method overriding in Java.
+
+5.What is a CTE (Common Table Expression) in SQL?Write its syntax.
+6.Two SQL queries based on joins and window functions.
+
+7.LeetCode problem “First Non-Repeating Character in a String.”
+
+8.LeetCode problem “Valid Parentheses.”
+
+9.Give an overview of how Angular works
+
+
+PharmaACE – Interview Questions
+
+1. What is JWT?
+
+2. Explain the pillars of OOP. Also, explain where and how you have implemented them in your project.
+
+3. What is useEffect in React?
+       Write its syntax
+
+      Explain different
+      variations of useEffect
+      and their uses
+
+4. What are the different types of SQL commands?
+
+5. They give an SQL query related to COMMIT and ROLLBACK and ask:
+
+       Which command is
+       committed
+
+      Up to which line
+      rollback happens
+
+      Why rollback occurs
+
+6. They give 2–3 Java code snippets and ask:
+
+        What is the output?
+
+       Explain the reason for  
+       the output
+
+7. Write a program to check whether a number is an Armstrong number and explain the logic.
+
+8. Write a program to         count how many palindrome strings are present in a given string.
+
+9. Write a program to find the length of the longest substring without repeating characters.
+
+Xplor interview Questions:
+
+
+1. Explain your project in deep.
+2. Explin  how Authentication and Authorization and explain in your project
+3. Explain differnece betwen Authentication and Authorization.
+4. Explain Entire Flow of Your Project 
+4. Explain Security in your project.
+5. Explain AUthorization Filter in your project
+6. How many Roles in your Project and how you define them in your project
+7. Explain JWT and how you set JWT in your project
+8. how you set Expiry Time  of JWT in your project.
+9. What is Marker Interface .
+10. What is metadata in marker interface.
+11. what is react hook.
+12. Pattern  printing Code .
+13. What is Aggregation and Compostion.
+14.Draw JVM architecture .
+15. WHat is stack and Heap and which type of Data stored in Stack and Heap.
+16. Where is Spring boot Configuration file Stored ? in which Jar File.
+17. Explain Razor pay Integration in your Project.
+18. Explain Payment integration flow in your project.
+19. When user pay a payment and suddenly user click back button then  what happens .
+20. Explain differnebt Types of React hook in deatils .
+21. What is AI.
+22. Explain Your Views on AI.
+23. Explain Drawback of AI.
+24. Which AI you used.
+25. Which AI you Like Most
+26.Draw Project Block Diagram.
+
+Amdocs Interview Questions 
+1. Self Introduction in Short?
+2. Engineering Project Flow from user to backend , Why CNN all ML and DL model working?
+3. The project is now live currently?
+4. Now Explain CDAC Project, Tell me about Project Tech Stack?
+5. Why React?
+6. What is Redux?
+7. Which Data Structure did you use in your project?
+8. Write all the Spring Boot annotations and explain each in detail why it used?
+9. What Do you know about Deadlock?
+10. Implement Deadlock, pen paper coding?
+11. How to avoid Deadlock?
+12. Implement Bankers Algorithm?
+13. What is the difference between Race Condition and Deadlock?
+14. What is Producer, Consumer Problem?
+15. Implement Producer Consumer Problem?
+16. What is Multi-Threading?
+17. Implement Multi-Threading?
+18. SQL Join Queries on tables?
+19. Suppose, if you want to fast searching from database, then what you will do, suggest me other than Indexing?
+20. Pattern Printing Program?
+21. Reverse a String Program?
+22. What is shell scripting?
+23. Linux Basics?
+24. What is Docker?
+25. Difference between Docker and Kubernetes?
+
+Interview Questions 
+1. Introduce yourself.
+2. What was your role in the project.
+3. Explain both CDAC project and final year project. 
+4. Draw project architecture, and db schema.
+5. Explain jwt and spring security it's architecture in project.
+6. What is authentication and authorisation.
+7. Status codes 401, 400, 500, 403, etc.
+8. Why you've used jwt in project.
+9. If multiple people are booking seat simultaneously and only 1 seat is remained/ few seats are remained how do you handle this case in your project.
+10. Explain react hooks
+11. What is react component lifecycle, 
+12. What is useEffect().
+13. What is redux.
+14. What is rest api explain with example. How you've used it in your project.
+15. What is @SpringBootApplication annotation 
+16. Concurrency/Multi threading
+17. Hashmap (All types)
+18. == And === difference
+19. == And equals() method difference.
+20. Write sql queries 2nd highest salary. Etc.
+21. Explain Deployment phases.
+22. What do you know about ci/cd.
+23. Where have you used hashmap in your project.
+24. Explain deadlock. And deadlock avoidance/handling techniques
+25. Write multilevel sorting code on pen paper.
+26. Have u used multi threading in your project. What is race condition.
+27. Explain synchronous and asynchronous. Where to use it.
+28. Your database contains large data, so queries became slow how will you improve the performance.
+29. Pattern printing program.
+30. Shadowing concept in java. Super keyword etc.
+31. If gap in education u have to explain it if asked
+32. What is undefined and null explain with example (JavaScript)
+33. How do you do manually rendering in react
+34. What is dependency array.
+35. What is virtual dom. How it works. Is using virtual dom really beneficial.
+36. Explain stored procedure.
+37. Difference between function and stored procedures.
+38. Can you use loops in stored procedures. While loop, for loop(not present in sql) etc
+39. What is singleton design pattern. Where u can use it. Give example 
+40. What is static methods and instance methods? can you override & overload static methods. 
+41. If I integrate 3rd party payment service in your app how will you handle it manage booking flow. When seat will get reserved. And also explain multiple people simultaneous booking handling.
+42. What is generative ai. Have u used ai in your project.
+43. What is server side rendering and client side rendering. Do you know about next js
+44. What will u rate urself in front end and backend
+45. What is optimistic locking and pessimistic locking
+46. Explain arrow functions
+
+RELFOR LABS INTERVIEW EXPERIANCE
+
+ROUND 1
+
+1 Introduce yourself
+
+2 Why 2 years of gap
+
+3 How was your college experience
+
+4 Explain complete flow of a request from frontend to backend
+
+5 What is JPA
+
+6 What is SQL injection
+
+7 How did you prevent it in project
+
+8 What is Spring Data JPA
+
+9 Explain entire authentication and authorization flow with JWT
+
+10 On which part you worked in your project
+
+11 What is mounting and unmounting
+
+12 What is closure
+
+13 What is deadlock
+
+14 How do you prevent deadlocks
+
+15 Suppose in your application suddenly 10000 customers traffic came then how would you efficiently handle it
+
+Do you have any questions
+
+What improvements should I focus on based on my performance in this interview 
+
+ROUND 2
+
+This is the second round interview experience it was in descriptive format because all the questions asked were situation based or project based and each question was dependent on the answers given to the interviewer
+
+1 Introduce yourself
+
+2 Explain your project in detail
+
+3 Have you implemented seat locking functionality and how
+
+I explained about lazily releasing the locked seats
+Locked seats are booked seats which cannot be released until the booking is cancelled and those seats which are selected by the user but the customer has not completed the payment within the 5 minute expiration time
+
+4 Is this a good way to release locked seats
+
+I said no and explained why I implemented this type of seat locking
+
+5 Can you think of another efficient and proper way of releasing the seats
+
+I explained about using a cron job and setting it to run every 1 minute
+Cron job is used for performing repetitive operations at a specific time interval
+
+6 What if we set the cron job for every 1 hour instead of 1 minute
+
+I said there will be a case where a seat can remain locked for 55 minutes unnecessarily
+
+I explained him about we can also use redis for seat locking and releasing them in short
+
+7 How can you use Redis for seat locking and releasing
+
+I said we can take advantage of Redis for handling seat locking and releasing
+
+8 What is TTL in Redis and how is it advantageous
+
+I explained that TTL is Time To Live and it helps in automatically expiring keys after a specific time which is useful for temporary seat locks
+
+9 How did you achieve this functionality and how many tables did you use
+
+I explained that I used three tables
+Seat Reservation table used for temporarily locked seats
+Bookings table used for saving details of the user who has booked the seat along with train and journey details
+Ticket table used for saving the passengers who are travelling in a booking
+
+10 Why did you use two tables one for temporary data and then again inserting similar data into the booking table after payment do you think it is an expensive operation because you are taking data from multiple tables and inserting into multiple tables
+
+I said I thought of this solution at that time
+11 Can you think of a more optimal solution
+After thinking for a minute I suggested a single table solution where booking and seat locking can be handled in a single booking table using additional status fields for booked and locked seats and locked seats should have an expiration time
+
+12 What if the operations on all the train related tables increase and the load becomes too heavy how will you handle it
+
+I explained about microservices architecture where I can separate train service booking service and user service and scale each service individually according to the need using containerization
+
+13 Why microservices why not monolithic architecture
+
+I gave two reasons but he was expecting more points and I was not able to answer further
+
+14 What is multithreading
+
+15 Have you used multithreading in your project
+
+16 What is a race condition
+
+17 If two users select the same seat at exactly the same time without even a nanosecond gap then what will you do
+Earlier we discussed scenarios where there was a nano or millisecond gap but now he asked if there is no gap at all
+
+I answered using the concept of synchronization that we can lock the common resource accessed by multiple threads since each user request is handled by a separate thread internally but I was not sure whether it was completely correct
+
+18 Is a multithreaded application good or bad what is your opinion
+
+I said it is good if used correctly and gave the example of VLC player
+
+19 Do you have any questions
+
+I asked what students like us should focus on in today’s time because most of the required code can be generated using ChatGPT or other GenAI tools
+
+Java 
+1.JRE JDK JVM Difference
+2.Static n Non Static method n Construction difference
+3.Controllers and Service Class Implementation
+4.Binary Search Code
+5. Sorting Technique
+6. Upcasting N DownCasting
+7. Some question on Upcasting n DownCasting like exception etc
+8. Java Collection
+9. Difference between List n Set
+10. Hashmap Implementation
+11. Garbage can Collection
+12. Some Question On Garbage Collection
+13. Final vs Finally Vs Finalize
+14. Difference Between Interface Vs Abstract Class
+15. Static Method Vs Default Method
+16. Stream API some Question
+17. Exception Handling
+18. Method Overloading Vs Method Overriding
+19. Early Binding Vs Late Binding
+20. Compile vs Runtime Exception
+21. Oops Pillar
+22. Write Controller Class With annotations
+23. Fail Fast n Fail Safe
+24. Java 1.8 feature
+25. Guess the Output
+
+
+
+
