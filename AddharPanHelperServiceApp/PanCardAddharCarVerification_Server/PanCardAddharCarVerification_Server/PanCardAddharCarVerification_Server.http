@@ -1,6 +1,0 @@
-@PanCardAddharCarVerification_Server_HostAddress = http://localhost:5244
-
-GET {{PanCardAddharCarVerification_Server_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
