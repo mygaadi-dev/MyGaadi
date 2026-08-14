@@ -35,6 +35,12 @@ export default function LoginRegister() {
   const [otpHint, setOtpHint] = useState('');
   const [loading, setLoading] = useState(false);
 
+  const [forgotOtpSent, setForgotOtpSent] = useState(false);
+  const [forgotOtp, setForgotOtp] = useState('');
+  const [newPassword, setNewPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [forgotHint, setForgotHint] = useState('');
+
   useEffect(() => {
     if (resendTimer <= 0) return;
     const id = setInterval(() => setResendTimer((value) => value > 0 ? value - 1 : 0), 1000);
@@ -45,6 +51,9 @@ export default function LoginRegister() {
     setSellerOtpVisible(false);
     setSellerOtp('');
     setOtpHint('');
+    setForgotOtpSent(false);
+    setForgotOtp('');
+    setForgotHint('');
   }, [loginRole, mode]);
 
   useEffect(() => {
@@ -176,10 +185,48 @@ export default function LoginRegister() {
     }
   };
 
+  const handleStartForgotPassword = async () => {
+    if (!emailRegex.test(email)) return toast.error('Enter valid email address');
+    try {
+      setLoading(true);
+      const res = await auth.startForgotPassword(email);
+      setForgotOtpSent(true);
+      if (res?.demoOtp) setForgotHint(`Demo OTP: ${res.demoOtp}`);
+    } catch (error) {
+      toast.error(error.response?.data?.message || 'Failed to send reset OTP');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleResetPassword = async () => {
+    if (!/^\d{6}$/.test(forgotOtp)) return toast.error('Enter 6 digit OTP');
+    if (!newPassword || newPassword.length < 6) return toast.error('New password must be minimum 6 characters');
+    if (newPassword !== confirmPassword) return toast.error('Passwords do not match');
+    try {
+      setLoading(true);
+      await auth.verifyResetPassword(email, forgotOtp, newPassword);
+      setMode('login');
+      setForgotOtpSent(false);
+      setForgotOtp('');
+      setNewPassword('');
+      setConfirmPassword('');
+      setPassword('');
+    } catch (error) {
+      toast.error(error.response?.data?.message || 'Password reset failed');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (mode === 'login') handleLogin();
-    else handleRegister();
+    else if (mode === 'register') handleRegister();
+    else if (mode === 'forgot') {
+      if (!forgotOtpSent) handleStartForgotPassword();
+      else handleResetPassword();
+    }
   };
 
   return (
@@ -188,7 +235,7 @@ export default function LoginRegister() {
         <div className="space-y-6">
           <div className="inline-flex items-center rounded-full bg-blue-50 border border-blue-100 px-4 py-2 text-sm font-bold text-blue-700">Secure MyGaadi access</div>
           <h1 className="text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">Buy and sell cars with verified trust.</h1>
-          <p className="text-slate-600 text-lg">Buyer login is simple. Seller/Agent login uses OTP. Seller registration uses PAN OTP verification through the dummy MS .NET KYC helper service.</p>
+          <p className="text-slate-600 text-lg">Buyer login is simple. Seller/Agent login uses OTP. Seller registration uses PAN OTP verification. Reset password anytime via OTP verification.</p>
           <div className="grid sm:grid-cols-2 gap-4">
             {['Verified Sellers', 'PAN KYC', 'Razorpay Payments', 'Escrow Status'].map((item) => <div key={item} className="bg-white rounded-2xl border border-slate-100 shadow-sm p-4 font-bold text-slate-700">✓ {item}</div>)}
           </div>
@@ -206,6 +253,11 @@ export default function LoginRegister() {
               <button type="button" onClick={() => setLoginRole('SELLER')} className={`py-2.5 rounded-xl text-sm font-bold ${loginRole === 'SELLER' ? 'bg-white text-blue-700 shadow-sm' : 'text-slate-500'}`}>Seller / Agent</button>
             </div>}
 
+            {mode === 'forgot' && <div className="p-3 bg-blue-50 border border-blue-100 rounded-2xl">
+              <p className="font-extrabold text-blue-900 text-sm">Forgot Password Recovery</p>
+              <p className="text-xs text-blue-700">Verify your registered email via OTP to reset your password.</p>
+            </div>}
+
             {mode === 'register' && <>
               <Field label="Full Name"><input value={name} onChange={(e) => setName(e.target.value)} className="input-box" placeholder="Full name" /></Field>
               <Field label="Phone"><input value={phone} onChange={(e) => setPhone(e.target.value.replace(/\D/g, '').slice(0, 10))} className="input-box" placeholder="10 digit phone" /></Field>
@@ -214,7 +266,7 @@ export default function LoginRegister() {
               {role === 'SELLER' && <div className="rounded-3xl border border-blue-100 bg-blue-50/50 p-4 space-y-4">
                 <div>
                   <p className="font-extrabold text-slate-900">PAN KYC Verification</p>
-                  <p className="text-xs text-slate-500">Verify PAN through dummy MS .NET government-API-style helper service before creating seller account.</p>
+                  <p className="text-xs text-slate-500">Verify PAN through helper service before creating seller account.</p>
                 </div>
                 <Field label="PAN Number">
                   <div className="flex gap-2">
@@ -238,16 +290,32 @@ export default function LoginRegister() {
               </div>}
             </>}
 
-            <Field label="Email"><input value={email} onChange={(e) => setEmail(e.target.value)} className="input-box" placeholder="Email" /></Field>
-            <Field label="Password"><input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input-box" placeholder="Password" /></Field>
+            <Field label="Email Address"><input value={email} onChange={(e) => setEmail(e.target.value)} className="input-box" placeholder="Email address" /></Field>
+
+            {mode !== 'forgot' && <Field label="Password"><input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input-box" placeholder="Password" /></Field>}
+
+            {mode === 'login' && <div className="flex justify-between items-center text-xs">
+              <button type="button" onClick={() => { setMode('forgot'); setForgotOtpSent(false); }} className="font-bold text-blue-600 hover:underline">Forgot password?</button>
+            </div>}
 
             {mode === 'login' && loginRole === 'SELLER' && sellerOtpVisible && <div className="rounded-2xl border border-amber-100 bg-amber-50 p-4 space-y-2">
               <Field label="Seller / Agent Login OTP"><input value={sellerOtp} onChange={(e) => setSellerOtp(e.target.value.replace(/\D/g, '').slice(0, 6))} className="input-box bg-white" placeholder="6 digit OTP" /></Field>
               {otpHint && <p className="text-xs font-bold text-amber-700">{otpHint}</p>}
             </div>}
 
+            {mode === 'forgot' && forgotOtpSent && <div className="rounded-2xl border border-amber-100 bg-amber-50 p-4 space-y-3">
+              <Field label="Enter 6-Digit Reset OTP"><input value={forgotOtp} onChange={(e) => setForgotOtp(e.target.value.replace(/\D/g, '').slice(0, 6))} className="input-box bg-white" placeholder="6 digit OTP" /></Field>
+              {forgotHint && <p className="text-xs font-bold text-amber-700">{forgotHint}</p>}
+              <Field label="New Password"><input type="password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} className="input-box bg-white" placeholder="Minimum 6 characters" /></Field>
+              <Field label="Confirm New Password"><input type="password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} className="input-box bg-white" placeholder="Confirm new password" /></Field>
+            </div>}
+
+            {mode === 'forgot' && <div className="flex justify-between text-xs font-bold text-slate-500 pt-1">
+              <button type="button" onClick={() => setMode('login')} className="hover:text-blue-700">← Back to Login</button>
+            </div>}
+
             <button disabled={loading} className="w-full py-3 rounded-xl bg-gradient-to-r from-blue-700 to-blue-500 text-white font-extrabold shadow-lg shadow-blue-500/20 disabled:opacity-60">
-              {loading ? 'Please wait...' : mode === 'login' ? (loginRole === 'SELLER' && !sellerOtpVisible ? 'Send Seller OTP' : 'Login') : 'Create Account'}
+              {loading ? 'Please wait...' : mode === 'login' ? (loginRole === 'SELLER' && !sellerOtpVisible ? 'Send Seller OTP' : 'Login') : mode === 'register' ? 'Create Account' : (!forgotOtpSent ? 'Send Reset OTP' : 'Update Password')}
             </button>
           </form>
         </div>
@@ -255,3 +323,4 @@ export default function LoginRegister() {
     </div>
   );
 }
+
