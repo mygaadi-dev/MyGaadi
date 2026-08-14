@@ -55,6 +55,18 @@ export function AuthProvider({ children }) {
     return completeLogin(data, 'Account created');
   };
 
+  const startForgotPassword = async (email) => {
+    const data = await api.post('/auth/forgot-password/start', { email }).then(unwrap);
+    toast.success(data?.message || 'Password reset OTP sent to email');
+    return data;
+  };
+
+  const verifyResetPassword = async (email, otp, newPassword) => {
+    const data = await api.post('/auth/forgot-password/reset', { email, otp, newPassword }).then(unwrap);
+    toast.success('Password updated successfully! Please login.');
+    return data;
+  };
+
   const logout = () => {
     localStorage.clear();
     setUser(null);
@@ -69,6 +81,8 @@ export function AuthProvider({ children }) {
     verifySellerLogin,
     startAdminLogin,
     verifyAdminLogin,
+    startForgotPassword,
+    verifyResetPassword,
     register,
     logout,
     isLoggedIn: !!user
